@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCSD CAPES & Salary Equity Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0 auto;
+            max-width: 960px;
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+        }
+
+        p,
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .footer {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 4rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📊 UCSD Rady CAPES Dashboard & Salary Equity Analysis</h1>
+    <p>This interactive data visualization project analyzes the relationship between teaching performance and instructor
+        salary at the UC San Diego Rady School of Management. The goal is to help administrators understand how course
+        outcomes, student feedback, and compensation align — or conflict.</p>
+
+    <h2>🎯 Project Objectives</h2>
+    <ul>
+        <li>Compare instructor salary against CAPES-based teaching evaluations.</li>
+        <li>Analyze performance by student GPA, study habits, and recommendation rates.</li>
+        <li>Investigate gender-based salary gaps and systemic disparities.</li>
+        <li>Provide actionable insights to improve fairness and academic quality.</li>
+    </ul>
+
+    <h2>📊 Dashboards Included</h2>
+    <ol>
+        <li><strong>Student Performance</strong> – Rankings by GPA and student recommendation rate.</li>
+        <li><strong>Instructor Salary</strong> – Salary distribution by title, year, and instructor.</li>
+        <li><strong>Salary vs Performance</strong> – Visualization of salary-GPA-rating alignment.</li>
+        <li><strong>Gender vs Pay</strong> – Salary/workload trends segmented by gender, title, and year.</li>
+        <li><strong>Individual vs Title Average</strong> – Compares instructor KPIs to their title average.</li>
+    </ol>
+
+    <h2>📷 Dashboard Snapshots</h2>
+    <h3>Salary vs Performance</h3>
+    <img src="images/salary_vs_performance.png" alt="Salary vs Performance Dashboard">
+    <p>Scatter plots and box plots explore the relationship between instructor salary and their student evaluation
+        outcomes (GPA, recommendation %).</p>
+
+    <h3>Instructor Salary Distribution</h3>
+    <img src="images/instructor_salary.png" alt="Instructor Salary Dashboard">
+    <p>Bar graphs and filters allow viewers to explore salary progression by year, title, and individual faculty.</p>
+
+    <h2>🧠 Key Findings</h2>
+    <ul>
+        <li>📈 Higher instructor salaries generally correlate with higher GPA and recommendation ratings.</li>
+        <li>⚖️ On average, <strong>female instructors earn $40,000 less</strong> than males under similar workloads and
+            titles.</li>
+        <li>🎓 Despite high salaries, some instructors consistently underperform — suggesting need for review or
+            intervention.</li>
+        <li>📉 Female salaries dropped more than male salaries post-2022, indicating a trend worth administrative
+            attention.</li>
+    </ul>
+
+    <h2>🧰 Data Sources & Engineering</h2>
+    <ul>
+        <li>📂 <strong>CAPES Evaluation Data</strong> – Public data scraped from Kaggle after the CAPES system shut down
+            in 2023.</li>
+        <li>🧪 <strong>Faculty Salary Data</strong> – Scraped using Selenium from the UC Wage Transparency Portal.</li>
+        <li>🔧 <strong>Data Cleaning</strong> – Used regex for name splits, date parsing, GPA extraction, and score
+            formatting.</li>
+    </ul>
+
+    <h3>🔗 Selenium Code Credit (COGS 108)</h3>
+    <p>Web scraping automation adapted from:</p>
+    <ul>
+        <li>Lily Yu</li>
+        <li>Sophia Alonso</li>
+        <li>Kelly Tran</li>
+        <li>Yining Wang</li>
+    </ul>
+
+    <h2>🧩 Dashboard Interactivity</h2>
+    <ul>
+        <li><strong>Drill-down Filters</strong> – Select instructor, title, or year across views.</li>
+        <li><strong>KPI Snapshots</strong> – Click data points to update sidebar summaries in real-time.</li>
+        <li><strong>Year-over-Year Analysis</strong> – Examine changes in pay and performance over time.</li>
+    </ul>
+
+    <h2>👨‍👩‍👧 Team Roles</h2>
+    <ul>
+        <li><strong>Chen-Fan Lee</strong> – Dashboard creation</li>
+        <li><strong>Ethan Lu</strong> – Final documentation & dashboard polishing</li>
+        <li><strong>Ryosuke Oguchi</strong> – Data collection, scraping & cleaning</li>
+        <li><strong>Nicole Ou</strong> – Data preparation & visualization</li>
+    </ul>
+
+    <h2>✅ Recommendations</h2>
+    <ul>
+        <li>Conduct annual salary audits focused on gender, title, and teaching outcomes.</li>
+        <li>Align salary reviews with performance metrics (e.g. recommendation %, GPA).</li>
+        <li>Provide mentorship or reconsider staffing for persistently low-rated instructors.</li>
+        <li>Encourage transparency in evaluation criteria and salary structure.</li>
+    </ul>
+
+    <h2>📬 Contact</h2>
+    <p>Website: <a href="https://github.com/raoguchi">Github</a><br></p>
+
+    <div class="footer">
+        <p>Made using Tableau & Python | UC San Diego</p>
+    </div>
+</body>
+
+</html>

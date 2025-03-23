@@ -81,6 +81,12 @@ This project includes **five Tableau dashboards**:
 | **Faculty Salary (UC Wage Database)** | Scraped using Selenium; structured for year/title-level analysis. |
 | **Tools Used** | Python (Pandas, Regex), Selenium, Tableau Desktop |
 
+> 💡 **Selenium scraping code adapted from the work of COGS 108 students**:
+> - Lily Yu  
+> - Sophia Alonso  
+> - Kelly Tran  
+> - Yining Wang
+
 ---
 
 ## ⚙️ Data Preparation Steps
@@ -146,4 +152,3 @@ As tuition increases and academic equity becomes more visible, universities must
 - Structural inequities (e.g. gender bias) are proactively addressed.
 
 This project equips administrators with the data tools to meet those goals.
-
